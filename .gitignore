@@ -1,0 +1,4 @@
+obj/
+GameData/KSPFixRoboticsLooseLock/*.dll
+GameData/*.zip
+__pycache__/
