@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 
@@ -16,7 +17,9 @@ namespace com.github.lhervier.ksp.fix.roboticslooselock
         private void Start()
         {
             Settings.Load();
-            Log.Info($"Version {typeof(KSPFixRoboticsLooseLock).Assembly.GetName().Version}, " +
+            string version = typeof(KSPFixRoboticsLooseLock).Assembly
+                .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+            Log.Info($"Version {version}, " +
                 $"restoreDriveAfterWarp {Settings.RestoreDriveAfterWarp}, log level {Log.Level}");
             if (!Settings.RestoreDriveAfterWarp)
             {
