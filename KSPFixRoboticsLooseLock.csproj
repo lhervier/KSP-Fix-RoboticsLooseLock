@@ -3,7 +3,7 @@
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>KSPFixRoboticsLooseLock</AssemblyName>
     <RootNamespace>com.github.lhervier.ksp.fix.roboticslooselock</RootNamespace>
-    <Version>0.1.0</Version>
+    <Version>0.1.0-dev</Version>
     <Description>Gives a robotic part its motor drive back when on-rails time warp ends, so that a locked piston or hinge holds again instead of sliding freely</Description>
     <!-- Straight into the folder that gets copied to the GameData of KSP. -->
     <OutputPath>GameData\KSPFixRoboticsLooseLock</OutputPath>
